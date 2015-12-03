@@ -31,8 +31,31 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2>
-<a id="updating" class="anchor" href="#updating" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updating...</h2>
+        <h1>
+<a id="background--how-can-we-identify-horizontal-transfer-of-transposable-elements" class="anchor" href="#background--how-can-we-identify-horizontal-transfer-of-transposable-elements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Background--how can we identify horizontal transfer of transposable elements?</h1>
+
+<h1>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h1>
+
+<h2>
+<a id="sequence-alignment" class="anchor" href="#sequence-alignment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequence alignment</h2>
+
+<p>PtRLC_724_B homologous sequences in angiosperms were retrieved from blast results against NCBI nucleotide database (<a href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</a>). For sequences in loblolly pine, sugar pine and Norway spruce genome, blast search was performed locally by BLAST+2.2.30. Sequences in Repbase were also retrieved through local blast. Representative sequences of each species (percent of identity of each other75% was set for local blast search.</p>
+
+<p>PtRLC_724_B protein sequences were obtained through the tblastn results against the DNA sequences using Co4_Po_tr protein sequence in Repbase as the query.</p>
+
+<p>Both DNA and protein sequences alignments were by MUSCLE  with default settings.</p>
+
+<h2>
+<a id="phylogenetic-tree-construction" class="anchor" href="#phylogenetic-tree-construction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Phylogenetic tree construction</h2>
+
+<p>Conserved sites for phylogenetic analyses were  selected based on the alignments by Gblocks0.91b under less stringent criteria “allow smaller final blocks” and “allow less strict flanking positions”. A total of 2995  nucleotide sites were kept after selection.</p>
+
+<p>Substitution models for nucleotide sequences and amino acid sequences were selected using jModelTest2 and ProtTest 2.4, respectively.  jModelTest2 was ran on the CIPRES server (<a href="https://www.phylo.org/">https://www.phylo.org/</a> ).  Models were evaluated under all four criterions: AIC, BIC, AICc and LnL. The model listed as the best fit under most criterions was selected for phylogenetic tree construction. For PtRLC_724_B homologous sequences, the best nucleotide substitution model was GTR+G+F, and the best amino acid substitution model was JTT+G+F. </p>
+
+<p>Maximum likelihood trees were built using the PhyML 3.0 program available on the ATGC bioinformatics platform (<a href="http://atgc.lirmm.fr/phyml/">http://atgc.lirmm.fr/phyml/</a> ), selecting options according to the best fitting substitution model. For trees based on DNA sequences, the number of substitution rate categories was set as 6 (to be consistent with that used in Bayesian tree). Both SPR and NNI were used for tree improvement. aLRT SH-like method was applied for branch support. One hundred  bootstrap iterations were also performed. </p>
+
+<p>Bayesian trees were built with MrBayes3.2.6 on CIPRES (<a href="https://www.phylo.org/">https://www.phylo.org/</a> ). 5,000,000 generations MCMC were run and sampled every 100 generations; other options were selected according to the best fitting substitution model.</p>
       </section>
     </div>
 
